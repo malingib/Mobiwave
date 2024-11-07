@@ -221,27 +221,27 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="testing-item">
-                        <h4 class="title">send us your message</h4>
-                        <form class="testing-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Place of Businness">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="form-group w-100">
-                                <input type="tel" placeholder="Phone">
-                            </div>
-                            <div class="form-group w-100">
-                                <textarea placeholder="Your message in here"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Submit Now">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+					<div class="testing-item">
+						<h4 class="title">send us your message</h4>
+						<form class="testing-form" action="sendEmail.php" method="POST">
+							<div class="form-group">
+								<input type="text" name="business" placeholder="Place of Business" required>
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email" required>
+							</div>
+							<div class="form-group w-100">
+								<input type="tel" name="phone" placeholder="Phone" required>
+							</div>
+							<div class="form-group w-100">
+								<textarea name="message" placeholder="Your message in here" required></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Submit Now">
+							</div>
+						</form>
+					</div>
+				</div>
                 <div class="col-md-6">
                     <div class="testing-item">
                         <h4 class="title">Why Us?</h4>                       

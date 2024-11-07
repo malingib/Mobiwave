@@ -195,36 +195,36 @@
         <div class="container">
             <div class="account-wrapper">
                 <div class="account-area">
-                    <h3 class="account-title">send us a message</h3>
-                    <form class="contact-form" id="contact_form_submit">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Full Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="email" placeholder="Email">
-                        </div>
+					<h3 class="account-title">Send us a Message</h3>
+					<form class="contact-form" id="contact_form_submit" action="sendMessage.php" method="POST">
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="Full Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Email" required>
+						</div>
 						<div class="form-group w-100">
-                                <input type="tel" placeholder="Phone">
-                            </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group radio-group">
-                            <p>Preferred of mode Communication</p>
-                            <div class="radio-item">
-                                <input type="radio" checked name="mode" id="mode01">
-                                <label for="mode01">Email</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="mode" id="mode02">
-                                <label for="mode02">Phone</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Send Message">
-                        </div>
-                    </form>
-                </div>
+							<input type="tel" name="phone" placeholder="Phone" required>
+						</div>
+						<div class="form-group">
+							<textarea id="message" name="message" placeholder="Message" required></textarea>
+						</div>
+						<div class="form-group radio-group">
+							<p>Preferred mode of Communication</p>
+							<div class="radio-item">
+								<input type="radio" name="mode" id="mode01" value="Email" checked>
+								<label for="mode01">Email</label>
+							</div>
+							<div class="radio-item">
+								<input type="radio" name="mode" id="mode02" value="Phone">
+								<label for="mode02">Phone</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message">
+						</div>
+					</form>
+				</div>
             </div>
         </div>
     </section>
