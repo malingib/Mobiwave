@@ -1134,7 +1134,7 @@ header .list {
         .header-bottom .header-area .logo a {
           display: block; }
           .header-bottom .header-area .logo a img {
-            width: 100%; } }
+            width: 30%; } }
   @media (max-width: 991px) {
         .header-bottom .header-area .menu {
           position: absolute;
